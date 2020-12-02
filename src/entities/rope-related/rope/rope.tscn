@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://src/entities/rope-related/rope/rope.gd" type="Script" id=1]
+
+[node name="Rope" type="Line2D"]
+points = PoolVector2Array( 0, 0 )
+width = 3.0
+default_color = Color( 0.686275, 0.227451, 0.227451, 1 )
+joint_mode = 1
+script = ExtResource( 1 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.001
+one_shot = true
